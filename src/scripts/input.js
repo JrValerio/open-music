@@ -2,10 +2,10 @@
   Não altere a função abaixo!
 */
 
-function handleCustomInputRange() {
+export const handleCustomInputRange = () => {
   const inputRange = document.querySelector(".price__input-range");
 
-  inputRange.addEventListener("input", function (event) {
+  inputRange.addEventListener("input", (event) => {
     const currentInputValue = event.target.value;
     const runnableTrackProgress = (currentInputValue / inputRange.max) * 100;
 
