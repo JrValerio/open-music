@@ -23,6 +23,7 @@ const renderGenreItems = (genres) => {
 const createAlbumCard = (albumData) => {
   // CRIANDO OS ELEMENTOS
   const card = document.createElement("li");
+  card.classList.add("album__item", "slide");
 
   const albumCoverContainer = document.createElement("figure");
   const albumCoverImg = document.createElement("img");
